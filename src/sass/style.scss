@@ -1,0 +1,411 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+//VARIABLES
+//Font-sizes
+$heading-one-font: 4rem;
+$heading-two-font: 3.4rem;
+$heading-three-font: 2rem;
+$font-middle: 1.4rem;
+$font-small: 1.2rem;
+
+//Fonts
+$oswald: 'Oswald', sans-serif;
+
+//Colors
+$grey: #bdbdbd;
+$dark-grey: #808080;
+$grey-background: #e8e8e8;
+
+* {
+    font-family: $oswald;
+    letter-spacing: 1px;
+    text-shadow: 4px 3px 9px rgba(0,0,0,0.4);
+}
+
+    .heading-one-font {
+        font-size: $heading-one-font;
+    }
+
+    .heading-two-font {
+        font-size: $heading-two-font;
+        font-weight: 400;
+    }
+    .heading-three-font {
+        font-size: $heading-three-font;
+    }
+
+    .font-middle {
+        font-size: $font-middle
+    }
+
+    .font-small {
+        font-size:$font-small
+    }
+
+
+// Navigation Big screens
+#main-container {
+    padding: 0;
+}
+#menu-column {
+    
+    // height: 100%;
+    background-image: url("../img/menu-pattern.png");
+    background-repeat: repeat;
+    -webkit-box-shadow: 13px 3px 35px -12px rgba(80,80,80,1);
+    -moz-box-shadow: 13px 3px 35px -12px rgba(80,80,80,1);
+    box-shadow: 13px 3px 35px -12px rgba(80,80,80,1);
+    z-index: 5;
+    span {
+        position: fixed;
+        opacity: 0;
+        
+    }
+    #main-menu-container {
+        height: 83%;
+    }
+    img[alt="Site Logo"] {
+       position: relative; 
+       right: -67%;
+       top: 20px;
+       max-width: 180px;
+    }
+    .main-menu {
+        margin: 30px;
+        list-style-type: none;
+        // position: fixed;
+        .menu-list-item {
+            width: 100%;
+            border-bottom: 2px solid white;
+            a {
+                color: white;
+                font-size: 34px;
+                font-style: italic;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: bold;
+                text-shadow: 4px 3px 9px rgba(0,0,0,0.4);
+            } 
+        }
+        
+
+    }
+    .address-list {
+        // margin: 30px;
+        margin-left: 10px;
+        list-style-type: none;
+        li {
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            margin: 5px;
+            font-weight: 400;
+            img {
+                border: 3px solid white;
+            }
+        }
+    }
+}
+
+
+//Navigation small screens
+#navbar-small-screens {
+    background-image: url("../img/menu-pattern.png");
+    background-repeat: repeat;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    img[alt="Site Logo"] {
+        height: 50px;
+    }
+
+}
+#navbarSupportedContent {
+    border-top: 1px solid white;
+    margin-top: 5px;
+    li, li a {
+            list-style-type: none;
+            color: white;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
+            text-shadow: 4px 3px 9px rgba(0,0,0,0.4);
+
+        li {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            img {
+                border: 2px solid white;
+                max-width: 70%;
+            }
+        }
+    }
+}
+
+//First Section
+#first-section {
+    background-image: url("../img/first-section-background.png");
+    background-color: $grey-background;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+
+
+    height: 100vh;
+    .first-section-main-column {
+        background-image: url("../img/first-section-white-bottom.png");
+        background-position: bottom;
+        background-repeat: repeat-x;
+        .caret-img {
+                max-width: 60px;
+        }        
+    }
+}
+
+//Second Section
+#second-section {
+    .illustration {
+        height: 70%;
+    }
+}
+
+//Third Section
+#third-section {
+    background: #2e2e2e; /* Old browsers */
+    background: -moz-linear-gradient(left,  #2e2e2e 0%, #5e5e5e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #2e2e2e 0%,#5e5e5e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #2e2e2e 0%,#5e5e5e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#5e5e5e',GradientType=1 ); /* IE6-9 */
+
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    & > *:first-child{
+        border-right: 1px solid white;
+        ul {
+            list-style-type: none;
+        }
+    }
+    form {
+        button {
+            font-size: 17px;
+        }
+    }
+}
+
+#pictures-section {
+    border-bottom: 4px solid black;
+}
+
+#fourth-section {
+
+    span {
+        background-image: url("../img/spine.png");
+        background-size: contain;
+        background-position: 100px;
+        background-repeat: no-repeat;
+    }
+        background: #8b8b8b; /* Old browsers */
+        background: -moz-linear-gradient(left,  #8b8b8b 0%, #616161 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  #8b8b8b 0%,#616161 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  #8b8b8b 0%,#616161 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#616161',GradientType=1 ); /* IE6-9 */
+    border-bottom: 4px solid black;
+
+    #chiropractor-image {
+        width: 70%;
+    }
+}
+
+
+#fifth-section {
+    background-image: url("../img/fifth-section-background.png");
+    background-color: $grey-background;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    .fifth-section-main-column {
+        background-image: url("../img/first-section-white-bottom.png");
+        background-position: bottom;
+        background-repeat: repeat-x;
+    }
+    .form-column {
+        background-color: rgba(255,255,255,0.87);
+        border-radius: 30px;
+        border: 2px solid $dark-grey;
+        h2, p {
+            color: $dark-grey;
+        }
+        h2 {
+            &:first-child {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $grey;
+    border-top: 2px solid $dark-grey;
+    p {
+        margin-bottom: 0;
+        a {
+            color: white;
+            img {
+                max-width: 25px;
+            }
+        }
+    }
+}
+
+
+
+//MOBILE ADAPTATIONS
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    } 
+
+    #first-section {
+        background-size: cover;
+        height: 90vh;
+        .caret-img {
+            height: 40px;
+        }
+    }
+    h1 {
+        font-size: 40px!important;
+    }
+    h2 {
+        font-size: 30px!important;
+    }
+    p {
+        font-size: 15px!important;
+    }
+
+    #second-section {
+        .illustration-column {
+            padding: 10px;
+            .illustration {
+                height: 70%;
+                width: 70%;
+            }
+        }
+
+    }
+
+    #third-section>:first-child {
+        border: none;
+        border-bottom: 1px solid white;
+    }
+    
+    #fourth-section {
+        .spine-background {
+            background-image: none;
+        }
+        #chiropractor-image {
+            width: 50%;
+        }
+    }
+    #fifth-section {
+        h2 {
+            font-size: 25px!important;
+            &:last-child {
+                font-size: 22px!important;
+            }
+        }
+        background-position: bottom;
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+        .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #first-section {
+        background-size: auto;
+    }
+
+    #fourth-section {
+        .spine-background {
+            background-image: none;
+        }
+        #chiropractor-image {
+            width: 30%;
+        }
+    }
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1024px) { 
+    h1 {
+        font-size: 40px!important;
+    }
+    h2 {
+        font-size: 30px!important;
+    }
+    p {
+        font-size: 15px!important;
+    }
+ }
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1200px) { 
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #menu-column {
+        img[alt="Site Logo"] {
+            position: relative; 
+            right: -15%;
+            top: 20px;
+            width: 130px;
+            height: auto;
+    
+        }
+        #main-menu-container {
+            width: 180px;
+        }
+        .main-menu {
+            .menu-list-item a{
+                font-size: 27px!important;
+            }
+        }
+        .address-list {
+            li {
+                font-size: 12px!important;
+            }
+        }
+    }
+
+    #first-section {
+        background-size: cover;
+    }
+
+ }
